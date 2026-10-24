@@ -1,0 +1,303 @@
+<!doctype html><html><head><meta charset="utf-8"><title>AAT-1 Report - TaskFlow</title><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Times New Roman', 'Liberation Serif', serif; font-size: 10.6pt; color: #000; line-height: 1.38; }
+.page { width: 210mm; height: 297mm; padding: 14mm 15mm 0 15mm; position: relative; page-break-after: always; overflow: hidden; }
+.content { height: 255mm; overflow: hidden; }
+.footer { position: absolute; left: 15mm; right: 15mm; bottom: 10mm; border-top: 1px solid #000; padding-top: 5px; font-size: 8.5pt; display: flex; justify-content: space-between; }
+h1 { text-align: center; font-size: 14pt; margin: 14px 0 8px; padding-bottom: 4px; border-bottom: 1px solid #000; font-weight: bold; }
+.content > h1:first-child { margin-top: 0; }
+h2.q { text-align: center; font-size: 13pt; margin: 8px 0 4px; }
+h3.ul { font-size: 11pt; text-decoration: underline; margin: 12px 0 6px; font-weight: bold; }
+.center, .ctr { text-align: center; }
+p { text-align: justify; margin: 6px 0; }
+.small { font-size: 9.5pt; }
+code { font-family: 'Consolas', 'Courier New', monospace; font-size: 0.88em; }
+ul, ol { margin: 6px 0; padding-left: 26px; text-align: justify; }
+li { margin-bottom: 3px; }
+table.grid { width: 100%; border-collapse: collapse; margin: 6px 0; }
+table.grid td, table.grid th { border: 1px solid #000; padding: 5px 8px; vertical-align: middle; text-align: left; }
+table.grid th { background: #f2f2f2; width: 36%; }
+table.grid tr.head td { background: #f2f2f2; font-weight: bold; text-align: center; }
+table.eval td { padding: 5px 8px; }
+table.eval td.ctr, table.tech td.ctr, table.mod td.ctr { text-align: center; }
+table.details td, table.details th { padding: 5px 8px; }
+.cover-box { border: 2px solid #000; padding: 14px 20px 10px; text-align: center; margin-top: 2mm; }
+.college { font-size: 14pt; font-weight: bold; } .dept { font-size: 11pt; font-weight: bold; margin: 2px 0; } .ay { font-size: 10pt; }
+.cover-box hr { border: 0; border-top: 1px solid #000; margin: 12px 0; }
+.aat { font-size: 19pt; white-space: nowrap; font-weight: bold; margin: 4px 0; } .aat-sub { font-size: 11pt; font-weight: bold; }
+.ital { font-style: italic; font-size: 10pt; } .course { font-size: 13pt; font-weight: bold; margin: 6px 0 12px; }
+.ptl { font-size: 10pt; font-weight: bold; } .ptitle { font-size: 16pt; font-weight: bold; text-decoration: underline; margin: 6px 0 4px; }
+.fig { border: 1px solid #000; padding: 10px; margin: 8px 0; text-align: center; }
+.fig img { border: 1px solid #ccc; display: block; margin: 0 auto 6px; }
+.cap { font-weight: bold; font-size: 9.5pt; margin-top: 6px; } .cap.it { font-weight: normal; font-style: italic; }
+.fig.grid2 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 8px; }
+.fig.grid2 small { display: block; font-size: 7.5pt; line-height: 1.2; } .span2 { grid-column: span 4; }
+.pipeline { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+.pipeline i { font-style: normal; font-size: 9pt; }
+.stage { border: 1px solid #000; padding: 6px 4px; flex: 1; display: flex; flex-direction: column; font-size: 8pt; }
+.stage b { font-size: 8.5pt; margin-bottom: 2px; }
+pre { border: 1px solid #000; background: #f7f7f7; padding: 8px 10px; margin: 4px 0; font-family: 'Consolas', 'Courier New', monospace; font-size: 7.2pt; line-height: 1.2; white-space: pre-wrap; overflow: hidden; }
+.formula { font-size: 11pt; }
+.sign { display: flex; justify-content: space-between; gap: 40px; margin-top: 50px; text-align: center; }
+.sign > div { flex: 1; } .sign .line { border-top: 1px solid #000; margin-bottom: 4px; }
+table.info th { width: 30%; }
+</style></head><body>
+
+<section class="page">
+  <div class="content">
+<div class="cover-box">
+  <div class="college">NEW HORIZON COLLEGE OF ENGINEERING</div>
+  <div class="dept">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</div>
+  <div class="ay">Academic Year: 2026–2027</div>
+  <hr>
+  <div class="aat">ALTERNATIVE ASSESSMENT TEST - 1 (AAT-1)</div>
+  <div class="aat-sub">PORTFOLIO-DRIVEN PRACTICAL PROJECT REPORT (15 MARKS)</div>
+  <hr>
+  <div class="ital">A Practical Technical Report Submitted for the Course</div>
+  <div class="course">FULL STACK TECHNOLOGIES - 22CSE71</div>
+  <div class="ptl">PROJECT TITLE</div>
+  <div class="ptitle">TASKFLOW – FULL STACK TASK TRACKER</div>
+</div>
+<h3 class="ul center">STUDENT &amp; SUBMISSION DETAILS</h3>
+<table class="grid details">
+  <tr><th>Student Name</th><td><b>Tharun Sivakumar</b></td></tr>
+  <tr><th>University Seat Number (USN)</th><td>1NH23CS278</td></tr>
+  <tr><th>Semester / Section</th><td>7E</td></tr>
+  <tr><th>Course / Subject</th><td>Full Stack Technologies - 22CSE71</td></tr>
+  <tr><th>Assessment Title</th><td>AAT-1: Portfolio-Driven Project Development (15 Marks)</td></tr>
+  <tr><th>Project Title</th><td>TaskFlow – Full Stack Task Tracker</td></tr>
+  <tr><th>GitHub Repository Link</th><td>https://github.com/Veins19/FST_AAT1</td></tr>
+  <tr><th>Date of Submission</th><td>__ / __ / 2026 (Deadline: On or before 16-10-2026)</td></tr>
+</table>
+<h3 class="ul center" style="margin-top:14px">EVALUATION SCHEME – AAT-1 (FOR FACULTY USE)</h3>
+<table class="grid eval">
+  <tr class="head"><td style="width:70px">Sl. No.</td><td>Evaluation Criteria</td><td style="width:100px">Max Marks</td><td style="width:90px">Marks Obtained</td></tr>
+  <tr><td class="ctr">1</td><td>Project relevance and implementation</td><td class="ctr">5</td><td></td></tr>
+  <tr><td class="ctr">2</td><td>GitHub repository and documentation (README.md, structure)</td><td class="ctr">4</td><td></td></tr>
+  <tr><td class="ctr">3</td><td>Functionality and output</td><td class="ctr">3</td><td></td></tr>
+  <tr><td class="ctr">4</td><td>Learning demonstrated</td><td class="ctr">2</td><td></td></tr>
+  <tr><td class="ctr">5</td><td>Timely hard-copy submission</td><td class="ctr">1</td><td></td></tr>
+  <tr class="total"><td colspan="2" class="ctr"><b>TOTAL MARKS</b></td><td class="ctr"><b>15</b></td><td></td></tr>
+</table></div>
+  <div class="footer"><span>AAT-1: Portfolio-Driven Report | Tharun Sivakumar (1NH23CS278)</span><span>Page 1 of 8</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+<h1>1. PROJECT TITLE</h1>
+<h2 class="q">“TASKFLOW – FULL STACK TASK TRACKER”</h2>
+<p class="ctr small"><i>A REST API-Driven Task Management Web Application with Priority Tracking, Filtering, Search and Live Statistics</i></p>
+<p class="ctr small"><b>GitHub Portfolio URL:</b> https://github.com/Veins19/FST_AAT1</p>
+
+<h1>2. PROBLEM STATEMENT AND OBJECTIVES</h1>
+<h3 class="ul center">2.1 Problem Statement</h3>
+<p>Students and working professionals handle many assignments, project milestones and personal commitments at the same time, each with a different priority and deadline. Tracking these in paper lists, chat messages or scattered notes makes it hard to see what is still pending, which items are overdue and what has already been completed. Existing task tools are often heavy, account-based or cluttered with features that a single user does not need. Therefore, there is a need for a lightweight, self-hosted full-stack <code>TaskFlow</code> application that stores tasks centrally behind a validated REST API and presents them through a clean, responsive browser interface with instant filtering, search and progress statistics.</p>
+<h3 class="ul center">2.2 Project Objectives</h3>
+<ul>
+  <li><b>RESTful Backend Service:</b> To design and implement an Express.js API (<code>/api/tasks</code>, <code>/api/stats</code>) supporting create, read, update and delete operations with correct HTTP status codes (201, 204, 400, 404).</li>
+  <li><b>Responsive Frontend Client:</b> To build a single-page interface in HTML, CSS and vanilla JavaScript that consumes the API using the Fetch API and re-renders after every change.</li>
+  <li><b>Server-Side Validation &amp; Safe Rendering:</b> To validate titles, priorities and due dates on the server and to HTML-escape user text so that stored content cannot inject scripts (XSS).</li>
+  <li><b>Productivity Features:</b> To provide priority badges, due dates with overdue highlighting, All / Active / Done filtering, title search and live Total / Active / Done counters.</li>
+  <li><b>Testing &amp; Portfolio Publishing:</b> To verify the API with automated tests and publish the complete source code with a structured <code>README.md</code> and screenshots on GitHub.</li>
+</ul>
+
+<h1>3. TECHNOLOGIES / TOOLS USED</h1>
+<table class="grid tech">
+  <tr class="head"><td style="width:150px">Module / Layer</td><td style="width:200px">Technology / Tool</td><td>Purpose in Project</td></tr>
+  <tr><td class="ctr"><b>Frontend</b><br><code>public/</code></td><td class="ctr">HTML5, CSS3, JavaScript (ES2020), Fetch API</td><td>Interactive task interface with stats cards, filter tabs, search box, priority badges and inline validation messages.</td></tr>
+  <tr><td class="ctr"><b>Backend Server</b><br><code>app.js</code></td><td class="ctr">Node.js 22, Express.js 4</td><td>REST API routes, input validation, JSON body parsing and static file serving.</td></tr>
+  <tr><td class="ctr"><b>Data Storage</b><br><code>data/tasks.json</code></td><td class="ctr">JSON file persistence (Node <code>fs</code>)</td><td>Lightweight storage that survives server restarts; excluded from Git via <code>.gitignore</code>.</td></tr>
+  <tr><td class="ctr"><b>Testing</b><br><code>test/</code></td><td class="ctr"><code>node:test</code>, <code>assert</code></td><td>Integration tests that start the app on a random port with a temporary data file.</td></tr>
+  <tr><td class="ctr"><b>Version Control</b></td><td class="ctr">Git, GitHub</td><td>Source hosting and public portfolio showcase with README documentation.</td></tr>
+</table></div>
+  <div class="footer"><span>AAT-1: TaskFlow Full Stack Task Tracker | Tharun Sivakumar (1NH23CS278)</span><span>Page 2 of 8</span></div>
+</section>
+<section class="page">
+  <div class="content">
+<h1>4. PROJECT DESCRIPTION</h1>
+<h3 class="ul center">4.1 System Overview and Architecture</h3>
+<p><code>TaskFlow</code> is an end-to-end full-stack web application in which a browser client communicates with an Express server over JSON. A user can add a task with a title, priority (Low / Medium / High) and an optional due date, mark it done with a checkbox, delete it, filter the list by status, and search by title. Tasks that are past their due date and not completed are highlighted in red. As structured in the public GitHub repository (<code>FST_AAT1</code>), the project is organised into three cooperating parts:</p>
+<ol>
+  <li><b>Frontend Task Interface (<code>public/</code>):</b> <code>index.html</code>, <code>style.css</code> and <code>app.js</code> render the statistics cards (total, active, done), the add-task form, the filter tabs, the search box and the task list. All task titles are escaped before being inserted into the DOM.</li>
+  <li><b>Backend API (<code>app.js</code>, <code>server.js</code>):</b> <code>createApp(dataFile)</code> builds the Express application and accepts the storage path as a parameter, so tests can use a temporary file. A <code>validate()</code> helper normalises and checks every request body before it is saved.</li>
+  <li><b>Automated Tests (<code>test/api.test.js</code>):</b> Two integration tests exercise the full create → update → filter → delete life-cycle and all invalid-input cases against a live server instance.</li>
+</ol>
+<h3 class="ul center">4.2 Repository Module Breakdown &amp; Data Model</h3>
+<p>Table 4.1 lists the repository layout and the task entity stored by the system.</p>
+<table class="grid mod">
+  <tr class="head"><td style="width:150px">Repository Directory / Entity</td><td style="width:210px">Key Files &amp; Components</td><td>Functional Responsibility</td></tr>
+  <tr><td class="ctr"><code>app.js</code>, <code>server.js</code></td><td>Express app factory, routes, <code>validate()</code>, entry point</td><td>Implements the REST API, validation rules and JSON file persistence; <code>server.js</code> starts the server on port 3000.</td></tr>
+  <tr><td class="ctr"><code>public/</code></td><td><code>index.html</code>, <code>style.css</code>, <code>app.js</code></td><td>Renders stats, form, tabs, search and task list; calls the API using <code>fetch</code>.</td></tr>
+  <tr><td class="ctr"><code>test/</code></td><td><code>api.test.js</code></td><td>Verifies CRUD behaviour, filters, statistics and error responses (400 / 404).</td></tr>
+  <tr><td class="ctr"><code>docs/screenshots/</code></td><td>Six PNG screenshots</td><td>Output evidence used in <code>README.md</code> and in this report.</td></tr>
+  <tr><td class="ctr">Task Record</td><td><code>id</code>, <code>title</code>, <code>priority</code>, <code>dueDate</code>, <code>done</code>, <code>createdAt</code></td><td>One task. Title ≤ 120 characters; priority ∈ {low, medium, high}; dueDate is empty or a valid date.</td></tr>
+</table>
+<h3 class="ul center">4.3 REST API Summary</h3>
+<table class="grid mod">
+  <tr class="head"><td style="width:70px">Method</td><td style="width:190px">Endpoint</td><td>Description</td></tr>
+  <tr><td class="ctr">GET</td><td><code>/api/tasks?status=&amp;q=</code></td><td>List tasks; optional filter by <code>active</code> / <code>done</code> and title search.</td></tr>
+  <tr><td class="ctr">POST</td><td><code>/api/tasks</code></td><td>Create a task (201) or return a validation error (400).</td></tr>
+  <tr><td class="ctr">PUT</td><td><code>/api/tasks/:id</code></td><td>Update fields such as <code>done</code>; 404 if the task does not exist.</td></tr>
+  <tr><td class="ctr">DELETE</td><td><code>/api/tasks/:id</code></td><td>Delete a task (204); 404 if it does not exist.</td></tr>
+  <tr><td class="ctr">GET</td><td><code>/api/stats</code></td><td>Returns <code>{ total, active, done }</code> for the statistics cards.</td></tr>
+</table></div>
+  <div class="footer"><span>AAT-1: TaskFlow Full Stack Task Tracker | Tharun Sivakumar (1NH23CS278)</span><span>Page 3 of 8</span></div>
+</section>
+<section class="page">
+  <div class="content">
+<h1>5. IMPLEMENTATION / METHODOLOGY</h1>
+<p>The implementation of <b>TaskFlow</b> follows a five-stage engineering workflow that moves from requirement analysis to a published, tested portfolio project:</p>
+<div class="fig">
+  <div class="pipeline">
+    <div class="stage"><b>1. Requirements</b><span>Features &amp; Task</span><span>Data Model</span></div><i>▶</i>
+    <div class="stage"><b>2. REST API</b><span>Express Routes</span><span>CRUD + Stats</span></div><i>▶</i>
+    <div class="stage"><b>3. Validation</b><span>Input Rules &amp;</span><span>JSON Storage</span></div><i>▶</i>
+    <div class="stage"><b>4. Frontend UI</b><span>Fetch API &amp;</span><span>Safe Rendering</span></div><i>▶</i>
+    <div class="stage"><b>5. Test &amp; Publish</b><span>node:test &amp;</span><span>GitHub README</span></div>
+  </div>
+  <div class="cap it">Figure 5.1: Five-Stage Full-Stack Development, Validation, Testing and Publishing Pipeline</div>
+</div>
+
+<h3 class="ul center">5.1 Validation Rules &amp; Statistics Formulation</h3>
+<p>Every request body is passed through <code>validate()</code> before it is stored. A title is trimmed and must satisfy <b>1 ≤ length ≤ 120</b>; the priority must belong to the set <b>{low, medium, high}</b>; and a non-empty due date must be parseable by <code>Date.parse</code>. Invalid input returns HTTP 400 with a readable message that the interface shows under the form. For partial updates (<code>PUT</code>) only the supplied fields are validated. The dashboard counters are derived from the stored tasks as:</p>
+<p class="ctr formula"><b>Active = Total − Done</b> &nbsp;&nbsp;&nbsp; and &nbsp;&nbsp;&nbsp; <b>Overdue(t) = (¬t.done) ∧ (t.dueDate &lt; today)</b></p>
+<p>In the demonstration data set of 5 tasks (1 completed), the API returns <b>total = 5, active = 4, done = 1</b>, and the task due on 2026-10-16 is rendered as <b>overdue</b>.</p>
+
+<h3 class="ul center">5.2 Step-by-Step Execution &amp; Deployment Methodology</h3>
+<ol>
+  <li><b>Clone the Repository:</b> Execute <code>git clone https://github.com/Veins19/FST_AAT1.git</code> and navigate into the project folder (<code>cd FST_AAT1</code>).</li>
+  <li><b>Install Dependencies:</b> Run <code>npm install</code> to download Express and generate the <code>node_modules</code> folder (Node.js 18 or higher is required).</li>
+  <li><b>Start the Server:</b> Run <code>npm start</code>. The console prints <code>TaskFlow running at http://localhost:3000</code>.</li>
+  <li><b>Open the Application:</b> Visit <code>http://localhost:3000</code> in any browser to add, complete, filter, search and delete tasks. Data is saved to <code>data/tasks.json</code>.</li>
+  <li><b>Run the Automated Tests:</b> Execute <code>npm test</code>; the expected result is <i>2 tests passed, 0 failed</i>.</li>
+</ol></div>
+  <div class="footer"><span>AAT-1: TaskFlow Full Stack Task Tracker | Tharun Sivakumar (1NH23CS278)</span><span>Page 4 of 8</span></div>
+</section>
+<section class="page">
+  <div class="content">
+<h1>6. IMPORTANT CODE SNIPPETS</h1>
+<p>The following core snippets from the <code>FST_AAT1</code> repository illustrate server-side validation, the create-task route, XSS-safe rendering on the client and the automated API test.</p>
+<h3 class="ul center">6.1 Server-Side Input Validation (<code>app.js</code>)</h3>
+<pre>  const validate = (body, partial = false) =&gt; {
+    const out = {};
+    if (!partial || body.title !== undefined) {
+      const title = String(body.title ?? '').trim();
+      if (!title) return { error: 'Title is required' };
+      if (title.length &gt; 120) return { error: 'Title must be 120 characters or fewer' };
+      out.title = title;
+    }
+    if (body.priority !== undefined) {
+      if (!PRIORITIES.includes(body.priority)) return { error: 'Priority must be low, medium or high' };
+      out.priority = body.priority;
+    }
+    if (body.dueDate !== undefined) {
+      if (body.dueDate !== '' &amp;&amp; Number.isNaN(Date.parse(body.dueDate))) return { error: 'Invalid due date' };
+      out.dueDate = body.dueDate;
+    }
+    if (body.done !== undefined) out.done = Boolean(body.done);
+    return { value: out };
+  };</pre>
+<h3 class="ul center">6.2 Create-Task REST Route (<code>app.js</code>)</h3>
+<pre>  app.post('/api/tasks', (req, res) =&gt; {
+    const { error, value } = validate(req.body);
+    if (error) return res.status(400).json({ error });
+    const tasks = load();
+    const task = {
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+      priority: 'medium',
+      dueDate: '',
+      done: false,
+      createdAt: new Date().toISOString(),
+      ...value,
+    };
+    tasks.unshift(task);
+    save(tasks);
+    res.status(201).json(task);
+  });</pre>
+<h3 class="ul center">6.3 XSS-Safe Rendering (<code>public/app.js</code>)</h3>
+<pre>// Escape user text before inserting into HTML (prevents XSS).
+const esc = (s) =&gt; s.replace(/[&amp;&lt;&gt;"']/g, (c) =&gt; ({ '&amp;': '&amp;amp;', '&lt;': '&amp;lt;', '&gt;': '&amp;gt;', '"': '&amp;quot;', "'": '&amp;#39;' }[c]));</pre>
+<h3 class="ul center">6.4 Integration Test – CRUD Life-Cycle (<code>test/api.test.js</code>)</h3>
+<pre>test('create, list, update, filter and delete a task', async () =&gt; {
+  let res = await call('/tasks', 'POST', { title: 'Write report', priority: 'high' });
+  assert.strictEqual(res.status, 201);
+  const task = await res.json();
+  assert.strictEqual(task.priority, 'high');
+  assert.strictEqual(task.done, false);
+
+  res = await call(`/tasks/${task.id}`, 'PUT', { done: true });
+  assert.strictEqual((await res.json()).done, true);
+
+  assert.strictEqual((await (await call('/tasks?status=done')).json()).length, 1);
+  assert.strictEqual((await (await call('/tasks?status=active')).json()).length, 0);
+  assert.deepStrictEqual(await (await call('/stats')).json(), { total: 1, done: 1, active: 0 });
+
+  assert.strictEqual((await call(`/tasks/${task.id}`, 'DELETE')).status, 204);
+  assert.strictEqual((await call(`/tasks/${task.id}`, 'DELETE')).status, 404);</pre></div>
+  <div class="footer"><span>AAT-1: TaskFlow Full Stack Task Tracker | Tharun Sivakumar (1NH23CS278)</span><span>Page 5 of 8</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+<h1>7. OUTPUT SCREENSHOTS</h1>
+<p>The operational output of <b>TaskFlow</b> is presented in Figures 7.1 and 7.2. Figure 7.1 shows the main screen with live statistics, the add-task form, the filter tabs and the task list.</p>
+<div class="fig"><img src="../report/crop/01-home.png" style="width:250px"><div class="cap">Figure 7.1: TaskFlow Home Screen showing Total / Active / Done Counters, Priority Badges, a Completed Task and an Overdue Task</div></div>
+<h3 class="ul center">7.1 Functional Analysis of the Main Screen (Figure 7.1)</h3>
+<ul>
+  <li><b>Statistics Cards (Top):</b> Show <b>5</b> total, <b>4</b> active and <b>1</b> done task, fetched from <code>/api/stats</code> after every change.</li>
+  <li><b>Add-Task Form:</b> Accepts a title, a priority (Low / Medium / High) and an optional due date; the <code>Add</code> button posts the data to the API.</li>
+  <li><b>Task List:</b> Each row has a completion checkbox, a colour-coded priority badge (green / amber / red) and a <code>Delete</code> button; completed tasks are struck through.</li>
+  <li><b>Overdue Highlight:</b> The task “Submit FST AAT-1 report” (due 2026-10-16) is shown in bold red because it is not completed and its due date has passed.</li>
+</ul>
+<h3 class="ul center">7.2 Validation, Add, Filter and Search (Figure 7.2)</h3>
+<p>Figure 7.2 demonstrates the interactive behaviour: the server rejects an empty title with a readable error, a new task is added and appears in the list, the <i>Done</i> tab shows only completed tasks, and the search box narrows the list to matching titles.</p>
+<div class="fig grid2">
+  <div><img src="../report/crop/02-validation-error.png" style="width:150px"><small>(a) Empty title rejected: “Title is required”</small></div>
+  <div><img src="../report/crop/03-task-added.png" style="width:150px"><small>(b) New task added (total becomes 6)</small></div>
+  <div><img src="../report/crop/04-done-filter.png" style="width:150px"><small>(c) “Done” filter shows completed tasks only</small></div>
+  <div><img src="../report/crop/05-search.png" style="width:150px"><small>(d) Search “git” filters by title</small></div>
+  <div class="cap span2">Figure 7.2: Validation Error, Task Creation, Status Filtering and Title Search in TaskFlow</div>
+</div></div>
+  <div class="footer"><span>AAT-1: TaskFlow Full Stack Task Tracker | Tharun Sivakumar (1NH23CS278)</span><span>Page 6 of 8</span></div>
+</section>
+<section class="page">
+  <div class="content">
+<h1>8. GITHUB REPOSITORY SCREENSHOT AND LINK</h1>
+<table class="grid info">
+  <tr><th>Repository Name &amp; Visibility</th><td><b>FST_AAT1</b> (Public Portfolio Repository)</td></tr>
+  <tr><th>GitHub Owner</th><td><b>Veins19</b> (Tharun Sivakumar) — <code>main</code> branch</td></tr>
+  <tr><th>Direct Repository Link</th><td><u>https://github.com/Veins19/FST_AAT1</u></td></tr>
+  <tr><th>Uploaded Project Modules</th><td><code>app.js</code>, <code>server.js</code>, <code>public/</code>, <code>test/</code>, <code>docs/screenshots/</code>, <code>package.json</code> and <code>README.md</code></td></tr>
+</table>
+<div class="fig"><img src="../screenshots/06-github-repo.png" style="width:420px"><div class="cap">Figure 8.1: Official GitHub Repository (Veins19/FST_AAT1) showing the Source Files, Test and Public Directories, Screenshots Folder and README.md</div></div>
+
+<h1>9. CHALLENGES FACED</h1>
+<ul>
+  <li><b>Designing a Testable Backend:</b> A hard-wired storage path would make tests modify real user data. The data file location was therefore passed into <code>createApp(dataFile)</code>, allowing the tests to run against a temporary file.</li>
+  <li><b>Consistent Validation for Create and Partial Update:</b> <code>POST</code> requires a title whereas <code>PUT</code> may send only <code>done</code>. A single <code>validate(body, partial)</code> function with a partial mode was written to serve both routes without duplicated rules.</li>
+  <li><b>Preventing Cross-Site Scripting:</b> Task titles are user-controlled and were first inserted through <code>innerHTML</code>. An <code>esc()</code> helper that converts <code>&amp; &lt; &gt; " '</code> was added so that stored text is always displayed as plain text.</li>
+  <li><b>Test Runner and Repository Hygiene:</b> Node 22 failed to run <code>node --test test/</code> on a directory, so the script was changed to the explicit test file path. The runtime file <code>data/tasks.json</code> was added to <code>.gitignore</code> so that local task data is never published.</li>
+</ul></div>
+  <div class="footer"><span>AAT-1: TaskFlow Full Stack Task Tracker | Tharun Sivakumar (1NH23CS278)</span><span>Page 7 of 8</span></div>
+</section>
+<section class="page">
+  <div class="content">
+<h1>10. LEARNING OUTCOMES AND CONCLUSION</h1>
+<h3 class="ul center">10.1 Learning Outcomes</h3>
+<ul>
+  <li><b>Full-Stack Application Design:</b> Gained hands-on experience in building a REST backend with Express and connecting it to a browser frontend through the Fetch API.</li>
+  <li><b>API Design &amp; Validation:</b> Learned to choose correct HTTP methods and status codes (201, 204, 400, 404) and to validate and normalise input on the server.</li>
+  <li><b>Secure Front-End Practices:</b> Understood why user-supplied text must be escaped before it is rendered, and how to prevent XSS in a vanilla JavaScript client.</li>
+  <li><b>Automated Testing:</b> Practised writing integration tests with <code>node:test</code> that start the server on a random port and use an isolated data file.</li>
+  <li><b>Git &amp; GitHub Portfolio Management:</b> Learned to organise a repository, ignore runtime data, commit meaningful changes and document the project with a complete <code>README.md</code>.</li>
+</ul>
+<h3 class="ul center">10.2 Conclusion</h3>
+<p>The <b>TaskFlow</b> application successfully fulfils all requirements of the AAT-1 Portfolio-Driven Assessment for the course <i>Full Stack Technologies (22CSE71)</i>. By combining a validated Express REST API, JSON persistence and a responsive JavaScript interface with filtering, search, priorities, overdue highlighting and live statistics, the project helps users plan and track their work effectively. It is verified by automated tests and hosted and documented on GitHub under <code>Veins19/FST_AAT1</code>. Future enhancements include user authentication, a database such as MongoDB, and in-place task editing.</p>
+<div class="sign">
+  <div><div class="line"></div><b>Signature of the Student</b><br><small>Tharun Sivakumar (USN: 1NH23CS278)</small></div>
+  <div><div class="line"></div><b>Signature of the Faculty Evaluator</b><br><small>Full Stack Technologies (22CSE71)</small></div>
+</div></div>
+  <div class="footer"><span>AAT-1: TaskFlow Full Stack Task Tracker | Tharun Sivakumar (1NH23CS278)</span><span>Page 8 of 8</span></div>
+</section>
+</body></html>
